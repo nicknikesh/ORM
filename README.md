@@ -29,25 +29,25 @@ Models.py
 
 from django.db import models
 from django.contrib import admin
-class Book(models.Model):
-     bookid=models.IntegerField(primary_key=True);
-     bookname=models.CharField(max_length=20);
-     author=models.CharField(max_length=50);
-     price=models.IntegerField();
-     publishdate=models.DateField();
-class BookAdmin(admin.ModelAdmin):
-     list_display=("bookid","bookname","author","price","publishdate");
+class Bank(models.Model):
+     accountno=models.IntegerField(primary_key=True);
+     cardholdername=models.CharField(max_length=20);
+     branch=models.CharField(max_length=50);
+     depositedammount=models.IntegerField();
+     accountopendate=models.DateField();
+class BankAdmin(admin.ModelAdmin):
+     list_display=("accountno","cardholdername","branch","depositedammount","accountopendate");
 
 Admin.py
 
 from django.contrib import admin
-from .models import Book ,BookAdmin
-admin.site.register(Book,BookAdmin)
+from .models import Bank ,BankAdmin
+admin.site.register(Bank,BankAdmin)
 
 ```
 
 ## OUTPUT
-![alt text](<vijay/WEB APP.png>)
+![alt text](<Screenshot 2024-05-22 130855.png>)
 
 
 

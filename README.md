@@ -29,25 +29,29 @@ Models.py
 
 from django.db import models
 from django.contrib import admin
-class Bank(models.Model):
-     accountno=models.IntegerField(primary_key=True);
-     cardholdername=models.CharField(max_length=20);
-     branch=models.CharField(max_length=50);
-     depositedammount=models.IntegerField();
-     accountopendate=models.DateField();
-class BankAdmin(admin.ModelAdmin):
-     list_display=("accountno","cardholdername","branch","depositedammount","accountopendate");
+class Book(models.Model):
+bookid=models.IntegerField(primary_key=True);
+bookname=models.CharField(max_length=20);
+author=models.CharField(max_length=50);
+price=models.IntegerField();
+publishdate=models.DateField();
+class BookAdmin(admin.ModelAdmin):
+list_display=("bookid","bookname","author","price","publishdate");
 
 Admin.py
 
 from django.contrib import admin
-from .models import Bank ,BankAdmin
-admin.site.register(Bank,BankAdmin)
+from .models import Book ,BookAdmin
+admin.site.register(Book,BookAdmin)
 
 ```
 
 ## OUTPUT
-![alt text](<Screenshot 2024-05-22 130855.png>)
+![Screenshot 2024-05-22 135443](https://github.com/nicknikesh/ORM/assets/145633284/3ebeb1da-07bd-476a-9e0a-5167acb041ea)
+![Screenshot 2024-05-22 135520](https://github.com/nicknikesh/ORM/assets/145633284/9ff1e7b5-8459-493a-91ef-e42947bbcceb)
+
+
+
 
 
 

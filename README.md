@@ -47,8 +47,9 @@ admin.site.register(Book,BookAdmin)
 ```
 
 ## OUTPUT
-![Screenshot 2024-05-22 135443](https://github.com/nicknikesh/ORM/assets/145633284/3ebeb1da-07bd-476a-9e0a-5167acb041ea)
-![Screenshot 2024-05-22 135520](https://github.com/nicknikesh/ORM/assets/145633284/9ff1e7b5-8459-493a-91ef-e42947bbcceb)
+![Screenshot 2024-03-16 215259](https://github.com/nicknikesh/ORM/assets/145633284/9131de72-7788-44bb-9674-e0df07434352)
+![Screenshot 2024-03-16 214222](https://github.com/nicknikesh/ORM/assets/145633284/c5939a56-2d67-44dc-b0c4-0628649b323f)
+
 
 
 
